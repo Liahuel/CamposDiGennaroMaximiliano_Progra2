@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Reportes reporte=new Reportes();
+        Reportes reporte = new Reportes();
         //Pacientes ya creados:
         reporte.agregarPaciente(new Paciente("Ana", 1));
         reporte.agregarPaciente(new Paciente("Luis", 2));
@@ -60,7 +60,7 @@ public class Main {
                 case 3:
                     System.out.print("Nombre del Medico: ");
                     String nombreMedico = sc.nextLine();
-                     reporte.agregarMedico(new Medico(nombreMedico));
+                    reporte.agregarMedico(new Medico(nombreMedico));
                     break;
                 case 4:
                     reporte.RetirarPacienteAtendido();
